@@ -1,0 +1,9 @@
+---
+import DashboardLayout from '../layouts/DashboardLayout.astro';
+import { PieChart } from '../components/charts/PieChart';
+---
+
+<DashboardLayout title="Pie Chart">
+  <h2 class="text-2xl font-bold mb-4">Pie Chart Analysis</h2>
+  <PieChart client:load />
+</DashboardLayout>

@@ -1,0 +1,9 @@
+---
+import DashboardLayout from '../layouts/DashboardLayout.astro';
+import { BarChart } from '../components/charts/BarChart';
+---
+
+<DashboardLayout title="Bar Chart">
+  <h2 class="text-2xl font-bold mb-4">Bar Chart Analysis</h2>
+  <BarChart client:load />
+</DashboardLayout>

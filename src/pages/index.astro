@@ -1,0 +1,14 @@
+---
+import DashboardLayout from '../layouts/DashboardLayout.astro';
+import { BarChart } from '../components/charts/BarChart';
+import { PieChart } from '../components/charts/PieChart';
+import { LineChart } from '../components/charts/LineChart';
+---
+
+<DashboardLayout title="Dashboard">
+  <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+    <BarChart client:load />
+    <PieChart client:load />
+    <LineChart client:load />
+  </div>
+</DashboardLayout>

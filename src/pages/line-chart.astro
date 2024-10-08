@@ -1,0 +1,9 @@
+---
+import DashboardLayout from '../layouts/DashboardLayout.astro';
+import { LineChart } from '../components/charts/LineChart';
+---
+
+<DashboardLayout title="Line Chart">
+  <h2 class="text-2xl font-bold mb-4">Line Chart Analysis</h2>
+  <LineChart client:load />
+</DashboardLayout>

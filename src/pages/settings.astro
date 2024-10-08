@@ -1,0 +1,30 @@
+---
+import DashboardLayout from '../layouts/DashboardLayout.astro';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Label } from "@/components/ui/label"
+import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
+---
+
+<DashboardLayout title="Settings">
+  <h2 class="text-2xl font-bold mb-4">Settings</h2>
+  <Card>
+    <CardHeader>
+      <CardTitle>Account Settings</CardTitle>
+      <CardDescription>Update your account information</CardDescription>
+    </CardHeader>
+    <CardContent>
+      <form class="space-y-4">
+        <div class="space-y-2">
+          <Label for="name">Name</Label>
+          <Input id="name" placeholder="Enter your name" />
+        </div>
+        <div class="space-y-2">
+          <Label for="email">Email</Label>
+          <Input id="email" type="email" placeholder="Enter your email" />
+        </div>
+        <Button type="submit">Save Changes</Button>
+      </form>
+    </CardContent>
+  </Card>
+</DashboardLayout>
